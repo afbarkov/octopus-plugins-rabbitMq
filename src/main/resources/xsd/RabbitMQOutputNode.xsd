@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="ru/integrotechnologies/octopus/plugins/rabbitmq/RabbitMQOutputNode"
+    xmlns="ru/integrotechnologies/octopus/plugins/rabbitmq/RabbitMQOutputNode">
+    <xs:element name="config">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="connectionName" type="xs:string"> </xs:element>
+                <xs:element default="DATA" minOccurs="0" name="serializationType">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="DATA"/>
+                            <xs:enumeration value="XML"/>
+                            <xs:enumeration value="JSON"/>
+                            <xs:enumeration value="DFDL"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:all>
+            <xs:attribute name="launchProfile"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
