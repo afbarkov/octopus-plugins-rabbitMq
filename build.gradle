@@ -13,7 +13,7 @@ repositories {
     mavenCentral()
     maven {
         allowInsecureProtocol = true
-        url "http://10.77.18.10:8081/repository/maven-public/"
+        url "https://maven.pkg.github.com/afbarkov/octopus-node-api"
     }
 }
 
