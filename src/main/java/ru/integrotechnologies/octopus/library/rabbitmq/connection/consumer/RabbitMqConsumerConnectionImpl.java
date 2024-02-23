@@ -1,4 +1,4 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer;
+package org.lexna.octopus.library.rabbitmq.connection.consumer;
 
 import com.google.gson.Gson;
 import com.rabbitmq.client.Channel;
@@ -6,12 +6,12 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Delivery;
 import com.rabbitmq.client.ShutdownSignalException;
 import lombok.extern.log4j.Log4j2;
-import ru.integrotechnologies.octopus.common.service.DlqRecord;
-import ru.integrotechnologies.octopus.common.service.DlqService;
-import ru.integrotechnologies.octopus.exceptions.OctopusSourceConnectionException;
-import ru.integrotechnologies.octopus.loggin.LogMessage;
-import ru.integrotechnologies.octopus.metrics.GaugeMetric;
-import ru.integrotechnologies.octopus.transactions.manager.TransactionManagerException;
+import org.lexna.octopus.common.service.DlqRecord;
+import org.lexna.octopus.common.service.DlqService;
+import org.lexna.octopus.exceptions.OctopusSourceConnectionException;
+import org.lexna.octopus.loggin.LogMessage;
+import org.lexna.octopus.metrics.GaugeMetric;
+import org.lexna.octopus.manager.TransactionManagerException;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

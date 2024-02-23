@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="ru/integrotechnologies/octopus/plugins/rabbitmq/connection/RabbitMqProducerConnectionFactory"
-    targetNamespace="ru/integrotechnologies/octopus/plugins/rabbitmq/connection/RabbitMqProducerConnectionFactory"
+           xmlns="org/lexna/octopus/plugins/rabbitmq/connection/RabbitMqProducerConnectionFactory"
+           targetNamespace="org/lexna/octopus/plugins/rabbitmq/connection/RabbitMqProducerConnectionFactory"
     elementFormDefault="qualified">
     <xs:element name="config">
         <xs:complexType>

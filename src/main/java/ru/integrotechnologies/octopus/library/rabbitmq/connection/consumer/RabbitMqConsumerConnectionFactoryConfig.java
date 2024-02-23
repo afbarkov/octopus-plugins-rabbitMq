@@ -1,11 +1,11 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer;
+package org.lexna.octopus.library.rabbitmq.connection.consumer;
 
 import jakarta.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "config", namespace = "ru/integrotechnologies/octopus/plugins/rabbitmq/connection/RabbitMqConsumerConnectionFactory")
+@XmlRootElement(name = "config", namespace = "org/lexna/octopus/plugins/rabbitmq/connection/RabbitMqConsumerConnectionFactory")
 public class RabbitMqConsumerConnectionFactoryConfig {
 
-    final static String SETTINGS_NAMESPACE = "ru/integrotechnologies/octopus/plugins/rabbitmq/connection/RabbitMqConsumerConnectionFactory";
+    final static String SETTINGS_NAMESPACE = "org/lexna/octopus/plugins/rabbitmq/connection/RabbitMqConsumerConnectionFactory";
 
     @XmlElement(namespace = SETTINGS_NAMESPACE, required = true)
     String host;

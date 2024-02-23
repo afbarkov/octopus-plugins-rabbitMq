@@ -1,19 +1,19 @@
-package ru.integrotechnologies.octopus.library.rabbitmq;
+package org.lexna.octopus.library.rabbitmq;
 
 import com.rabbitmq.client.AMQP;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.Logger;
-import ru.integrotechnologies.octopus.exceptions.OctopusNodeProcessionException;
-import ru.integrotechnologies.octopus.internal.Message;
-import ru.integrotechnologies.octopus.internal.MessageNode;
-import ru.integrotechnologies.octopus.internal.WorkflowContext;
-import ru.integrotechnologies.octopus.internal.WorkflowExecutionContext;
-import ru.integrotechnologies.octopus.internal.config.NodeConfig;
-import ru.integrotechnologies.octopus.internal.templates.AbstractInOutNode;
-import ru.integrotechnologies.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnection;
-import ru.integrotechnologies.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnectionFactory;
-import ru.integrotechnologies.octopus.loggin.LogMessage;
-import ru.integrotechnologies.octopus.metrics.GaugeMetric;
+import org.lexna.octopus.exceptions.OctopusNodeProcessionException;
+import org.lexna.octopus.internal.Message;
+import org.lexna.octopus.internal.MessageNode;
+import org.lexna.octopus.internal.WorkflowContext;
+import org.lexna.octopus.internal.WorkflowExecutionContext;
+import org.lexna.octopus.internal.config.NodeConfig;
+import org.lexna.octopus.internal.templates.AbstractInOutNode;
+import org.lexna.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnection;
+import org.lexna.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnectionFactory;
+import org.lexna.octopus.loggin.LogMessage;
+import org.lexna.octopus.metrics.GaugeMetric;
 
 import java.time.Instant;
 import java.util.Date;

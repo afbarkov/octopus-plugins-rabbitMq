@@ -1,9 +1,9 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.producer;
+package org.lexna.octopus.library.rabbitmq.connection.producer;
 
 import com.rabbitmq.client.AMQP;
 import lombok.extern.log4j.Log4j2;
-import ru.integrotechnologies.octopus.exceptions.OctopusException;
-import ru.integrotechnologies.octopus.loggin.LogMessage;
+import org.lexna.octopus.exceptions.OctopusException;
+import org.lexna.octopus.loggin.LogMessage;
 
 import java.io.IOException;
 import java.util.function.Consumer;

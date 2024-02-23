@@ -1,6 +1,6 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer;
+package org.lexna.octopus.library.rabbitmq.connection.consumer;
 
-import ru.integrotechnologies.octopus.internal.resources.SourceConnection;
+import org.lexna.octopus.internal.resources.SourceConnection;
 
 public interface RabbitMqConsumerConnection extends SourceConnection {
 

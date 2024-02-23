@@ -1,17 +1,17 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer;
+package org.lexna.octopus.library.rabbitmq.connection.consumer;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import lombok.extern.log4j.Log4j2;
-import ru.integrotechnologies.octopus.common.service.DlqService;
-import ru.integrotechnologies.octopus.exceptions.OctopusException;
-import ru.integrotechnologies.octopus.exceptions.OctopusSourceConnectionException;
-import ru.integrotechnologies.octopus.internal.WorkflowContext;
-import ru.integrotechnologies.octopus.internal.config.ConnectionConfig;
-import ru.integrotechnologies.octopus.internal.resources.SourceConnectionFactory;
-import ru.integrotechnologies.octopus.loggin.LogMessage;
-import ru.integrotechnologies.octopus.metrics.GaugeMetric;
+import org.lexna.octopus.common.service.DlqService;
+import org.lexna.octopus.exceptions.OctopusException;
+import org.lexna.octopus.exceptions.OctopusSourceConnectionException;
+import org.lexna.octopus.internal.WorkflowContext;
+import org.lexna.octopus.internal.config.ConnectionConfig;
+import org.lexna.octopus.internal.resources.SourceConnectionFactory;
+import org.lexna.octopus.loggin.LogMessage;
+import org.lexna.octopus.metrics.GaugeMetric;
 
 import java.io.IOException;
 import java.net.URI;

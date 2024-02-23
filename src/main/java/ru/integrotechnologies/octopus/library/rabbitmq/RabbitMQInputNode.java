@@ -1,4 +1,4 @@
-package ru.integrotechnologies.octopus.library.rabbitmq;
+package org.lexna.octopus.library.rabbitmq;
 
 import com.google.gson.Gson;
 import com.rabbitmq.client.AMQP;
@@ -6,19 +6,19 @@ import com.rabbitmq.client.Envelope;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
-import ru.integrotechnologies.octopus.exceptions.OctopusNodeProcessionException;
-import ru.integrotechnologies.octopus.internal.MessageNode;
-import ru.integrotechnologies.octopus.internal.MessageWritableNode;
-import ru.integrotechnologies.octopus.internal.WorkflowContext;
-import ru.integrotechnologies.octopus.internal.config.NodeConfig;
-import ru.integrotechnologies.octopus.internal.templates.AbstractPolingWorkflowInNode;
-import ru.integrotechnologies.octopus.internal.templates.PolingResult;
-import ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer.ConsumerRecord;
-import ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer.DlqMessage;
-import ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnection;
-import ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnectionFactory;
-import ru.integrotechnologies.octopus.loggin.LogMessage;
-import ru.integrotechnologies.octopus.metrics.GaugeMetric;
+import org.lexna.octopus.exceptions.OctopusNodeProcessionException;
+import org.lexna.octopus.internal.MessageNode;
+import org.lexna.octopus.internal.MessageWritableNode;
+import org.lexna.octopus.internal.WorkflowContext;
+import org.lexna.octopus.internal.config.NodeConfig;
+import org.lexna.octopus.internal.templates.AbstractPolingWorkflowInNode;
+import org.lexna.octopus.internal.templates.PolingResult;
+import org.lexna.octopus.library.rabbitmq.connection.consumer.ConsumerRecord;
+import org.lexna.octopus.library.rabbitmq.connection.consumer.DlqMessage;
+import org.lexna.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnection;
+import org.lexna.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnectionFactory;
+import org.lexna.octopus.loggin.LogMessage;
+import org.lexna.octopus.metrics.GaugeMetric;
 
 import java.util.*;
 import java.util.stream.Collectors;

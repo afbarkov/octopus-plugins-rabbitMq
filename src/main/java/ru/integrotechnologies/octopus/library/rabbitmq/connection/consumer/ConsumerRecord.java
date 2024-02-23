@@ -1,4 +1,4 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer;
+package org.lexna.octopus.library.rabbitmq.connection.consumer;
 
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Envelope;

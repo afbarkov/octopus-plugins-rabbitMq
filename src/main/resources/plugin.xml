@@ -1,7 +1,7 @@
 <plugin>
     <nodes>
         <node>
-            <implementation>ru.integrotechnologies.octopus.library.rabbitmq.RabbitMQInputNode</implementation>
+            <implementation>org.lexna.octopus.library.rabbitmq.RabbitMQInputNode</implementation>
             <name>RabbitMq input</name>
             <groupName>RabbitMq</groupName>
             <version>3.0</version>
@@ -15,7 +15,7 @@
             <icon iconType="SVG">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA4MDAgODAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA4MDAgODAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOTguOSwyMjAuNUgyNi41Yy01LjcsMC0xMC44LTIuMi0xNS4xLTYuNXMtNi41LTkuMy02LjUtMTUuMVYyNi41YzAtNS43LDIuMi0xMC44LDYuNS0xNS4xczkuMy02LjUsMTUuMS02LjVoMTcyLjUKCWM1LjcsMCwxMC44LDIuMiwxNS4xLDYuNXM2LjUsOS4zLDYuNSwxNS4xdjE3Mi41YzAsNS43LTIuMiwxMC44LTYuNSwxNS4xUzIwNC43LDIyMC41LDE5OC45LDIyMC41eiBNNDg0LjYsMjIwLjVIMzEyLjIKCWMtNS43LDAtMTAuOC0yLjItMTUuMS02LjVzLTYuNS05LjMtNi41LTE1LjFWMjYuNWMwLTUuNywyLjItMTAuOCw2LjUtMTUuMXM5LjMtNi41LDE1LjEtNi41aDE3Mi41YzUuNywwLDEwLjgsMi4yLDE1LjEsNi41CglzNi41LDkuMyw2LjUsMTUuMXYxNzIuNWMwLDUuNy0yLjIsMTAuOC02LjUsMTUuMVM0OTAuNCwyMjAuNSw0ODQuNiwyMjAuNXogTTc3MC4zLDIyMC41SDU5Ny45Yy01LjcsMC0xMC44LTIuMi0xNS4xLTYuNQoJcy02LjUtOS4zLTYuNS0xNS4xVjI2LjVjMC01LjcsMi4yLTEwLjgsNi41LTE1LjFzOS4zLTYuNSwxNS4xLTYuNWgxNzIuNWM1LjcsMCwxMC44LDIuMiwxNS4xLDYuNXM2LjUsOS4zLDYuNSwxNS4xdjE3Mi41CgljMCw1LjctMi4yLDEwLjgtNi41LDE1LjFTNzc2LjEsMjIwLjUsNzcwLjMsMjIwLjV6IE0xOTguOSw1MDYuMkgyNi41Yy01LjcsMC0xMC44LTIuMi0xNS4xLTYuNXMtNi41LTkuMy02LjUtMTUuMVYzMTIuMgoJYzAtNS43LDIuMi0xMC44LDYuNS0xNS4xczkuMy02LjUsMTUuMS02LjVoMTcyLjVjNS43LDAsMTAuOCwyLjIsMTUuMSw2LjVzNi41LDkuMyw2LjUsMTUuMXYxNzIuNWMwLDUuNy0yLjIsMTAuOC02LjUsMTUuMQoJUzIwNC43LDUwNi4yLDE5OC45LDUwNi4yeiBNNDg0LjYsNTA2LjJIMzEyLjJjLTUuNywwLTEwLjgtMi4yLTE1LjEtNi41cy02LjUtOS4zLTYuNS0xNS4xVjMxMi4yYzAtNS43LDIuMi0xMC44LDYuNS0xNS4xCglzOS4zLTYuNSwxNS4xLTYuNWgxNzIuNWM1LjcsMCwxMC44LDIuMiwxNS4xLDYuNXM2LjUsOS4zLDYuNSwxNS4xdjE3Mi41YzAsNS43LTIuMiwxMC44LTYuNSwxNS4xUzQ5MC40LDUwNi4yLDQ4NC42LDUwNi4yegoJIE03NzAuMyw1MDYuMkg1OTcuOWMtNS43LDAtMTAuOC0yLjItMTUuMS02LjVzLTYuNS05LjMtNi41LTE1LjFWMzEyLjJjMC01LjcsMi4yLTEwLjgsNi41LTE1LjFzOS4zLTYuNSwxNS4xLTYuNWgxNzIuNQoJYzUuNywwLDEwLjgsMi4yLDE1LjEsNi41czYuNSw5LjMsNi41LDE1LjF2MTcyLjVjMCw1LjctMi4yLDEwLjgtNi41LDE1LjFTNzc2LjEsNTA2LjIsNzcwLjMsNTA2LjJ6IE0xOTguOSw3OTEuOUgyNi41CgljLTUuNywwLTEwLjgtMi4yLTE1LjEtNi41cy02LjUtOS4zLTYuNS0xNS4xVjU5Ny45YzAtNS43LDIuMi0xMC44LDYuNS0xNS4xczkuMy02LjUsMTUuMS02LjVoMTcyLjVjNS43LDAsMTAuOCwyLjIsMTUuMSw2LjUKCXM2LjUsOS4zLDYuNSwxNS4xdjE3Mi41YzAsNS43LTIuMiwxMC44LTYuNSwxNS4xUzIwNC43LDc5MS45LDE5OC45LDc5MS45eiBNNDg0LjYsNzkxLjlIMzEyLjJjLTUuNywwLTEwLjgtMi4yLTE1LjEtNi41CglzLTYuNS05LjMtNi41LTE1LjFWNTk3LjljMC01LjcsMi4yLTEwLjgsNi41LTE1LjFzOS4zLTYuNSwxNS4xLTYuNWgxNzIuNWM1LjcsMCwxMC44LDIuMiwxNS4xLDYuNXM2LjUsOS4zLDYuNSwxNS4xdjE3Mi41CgljMCw1LjctMi4yLDEwLjgtNi41LDE1LjFTNDkwLjQsNzkxLjksNDg0LjYsNzkxLjl6IE03NzAuMyw3OTEuOUg1OTcuOWMtNS43LDAtMTAuOC0yLjItMTUuMS02LjVzLTYuNS05LjMtNi41LTE1LjFWNTk3LjkKCWMwLTUuNywyLjItMTAuOCw2LjUtMTUuMXM5LjMtNi41LDE1LjEtNi41aDE3Mi41YzUuNywwLDEwLjgsMi4yLDE1LjEsNi41czYuNSw5LjMsNi41LDE1LjF2MTcyLjVjMCw1LjctMi4yLDEwLjgtNi41LDE1LjEKCVM3NzYuMSw3OTEuOSw3NzAuMyw3OTEuOXoiLz4KPC9zdmc+</icon>
         </node>
         <node>
-            <implementation>ru.integrotechnologies.octopus.library.rabbitmq.RabbitMQOutputNode</implementation>
+            <implementation>org.lexna.octopus.library.rabbitmq.RabbitMQOutputNode</implementation>
             <name>RabbitMq output</name>
             <groupName>RabbitMq</groupName>
             <version>3.0</version>
@@ -36,17 +36,19 @@
         <connectionFactory>
             <name>RabbitMq consumer</name>
             <groupName>RabbitMq</groupName>
-            <implementation>ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnectionFactory</implementation>
+            <implementation>org.lexna.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnectionFactory
+            </implementation>
             <interfaces>
-                <interface>ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnection</interface>
+                <interface>org.lexna.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnection</interface>
             </interfaces>
         </connectionFactory>
         <connectionFactory>
             <name>RabbitMq producer</name>
             <groupName>RabbitMq</groupName>
-            <implementation>ru.integrotechnologies.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnectionFactory</implementation>
+            <implementation>org.lexna.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnectionFactory
+            </implementation>
             <interfaces>
-                <interface>ru.integrotechnologies.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnection</interface>
+                <interface>org.lexna.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnection</interface>
             </interfaces>
         </connectionFactory>
     </connectionFactories>

@@ -1,6 +1,6 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.consumer;
+package org.lexna.octopus.library.rabbitmq.connection.consumer;
 
-import ru.integrotechnologies.octopus.exceptions.OctopusException;
+import org.lexna.octopus.exceptions.OctopusException;
 
 import java.io.IOException;
 import java.util.function.Consumer;

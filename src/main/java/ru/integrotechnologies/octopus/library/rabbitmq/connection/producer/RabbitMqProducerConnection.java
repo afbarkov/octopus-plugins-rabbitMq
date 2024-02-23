@@ -1,7 +1,7 @@
-package ru.integrotechnologies.octopus.library.rabbitmq.connection.producer;
+package org.lexna.octopus.library.rabbitmq.connection.producer;
 
 import com.rabbitmq.client.AMQP;
-import ru.integrotechnologies.octopus.internal.resources.SourceConnection;
+import org.lexna.octopus.internal.resources.SourceConnection;
 
 public interface RabbitMqProducerConnection extends SourceConnection {
 

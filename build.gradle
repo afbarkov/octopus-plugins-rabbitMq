@@ -4,10 +4,10 @@ plugins {
     id 'distribution'
 }
 
-group 'ru.integrotechnologies.octopus.library'
+group 'org.lexna.octopus.library'
 version '3.0.0'
-sourceCompatibility = '19'
-targetCompatibility = '19'
+sourceCompatibility = '21'
+targetCompatibility = '21'
 repositories {
  mavenLocal()
     mavenCentral()
@@ -45,8 +45,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
     compileOnly group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.20.0'
     compileOnly group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '3.0.1'
-    
-    compileOnly 'ru.integrotechnologies.octopus:node-api:3.1.97'
+
+    compileOnly 'org.lexna.octopus:node-api:3.1.97'
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
 
 
