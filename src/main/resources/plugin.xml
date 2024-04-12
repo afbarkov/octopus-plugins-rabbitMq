@@ -37,7 +37,7 @@
             <name>RabbitMq consumer</name>
             <groupName>RabbitMq</groupName>
             <implementation>org.lexna.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnectionFactory
-            </implementation>
+           </implementation>
             <interfaces>
                 <interface>org.lexna.octopus.library.rabbitmq.connection.consumer.RabbitMqConsumerConnection</interface>
             </interfaces>
@@ -46,7 +46,7 @@
             <name>RabbitMq producer</name>
             <groupName>RabbitMq</groupName>
             <implementation>org.lexna.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnectionFactory
-            </implementation>
+           </implementation>
             <interfaces>
                 <interface>org.lexna.octopus.library.rabbitmq.connection.producer.RabbitMqProducerConnection</interface>
             </interfaces>
